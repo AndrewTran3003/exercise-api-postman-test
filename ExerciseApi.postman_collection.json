@@ -55,7 +55,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\n        \"name\": \"20kg Dumbbell\",\n        \"description\": \"This is a dumbbell\",\n        \"price\": 20\n    }",
+							"raw": "    {\n        \"name\": \"20kg Dumbbell\",\n        \"description\": \"This is a dumbbell\",\n        \"price\": 21\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
