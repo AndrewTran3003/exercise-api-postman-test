@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "72fa6cf6-0616-4ebb-9f1c-35f897b683fe",
+		"name": "ExerciseApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2281851"
+	},
+	"item": [
+		{
+			"name": "EquipmentRoute",
+			"item": [
+				{
+					"name": "GetEquipmentById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7005/Equipments/0de7aeaf-7b94-4d55-acf3-9470d1961464",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7005",
+							"path": [
+								"Equipments",
+								"0de7aeaf-7b94-4d55-acf3-9470d1961464"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllEquipments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7005/Equipments",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7005",
+							"path": [
+								"Equipments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOneEquipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"name\": \"20kg Dumbbell\",\n        \"description\": \"This is a dumbbell\",\n        \"price\": 20\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7005/Equipments/Create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7005",
+							"path": [
+								"Equipments",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateOneEquipment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"name\": \"5kg Dumbbell\",\n    \"description\": \"The basic dumbbel. Beginners should start with this\",\n    \"price\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7005/Equipments/Update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7005",
+							"path": [
+								"Equipments",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
