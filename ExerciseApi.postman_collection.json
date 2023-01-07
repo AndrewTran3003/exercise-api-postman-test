@@ -55,7 +55,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\n        \"name\": \"20kg Dumbbell\",\n        \"description\": \"This is a dumbbell\",\n        \"price\": 21\n    }",
+							"raw": "    {\n        \"name\": \"1kg Dumbbell\",\n        \"description\": \"Beginner dumbbell\",\n        \"price\": 5\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -78,13 +78,42 @@
 					"response": []
 				},
 				{
+					"name": "CreateMultipleEquipments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"20kg Dumbbell\",\n        \"description\": \"Intermediate dumbbell\",\n        \"price\": 20\n    },\n    {\n        \"name\": \"30kg Dumbbell\",\n        \"description\": \"Intermediate-Heavy dumbbell\",\n        \"price\": 25\n    },\n    {\n        \"name\": \"40kg Dumbbell\",\n        \"description\": \"Heavy dumbbell\",\n        \"price\": 30\n    }\n] \n   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7005/Equipments/CreateMany",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7005",
+							"path": [
+								"Equipments",
+								"CreateMany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "UpdateOneEquipment",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n    \"name\": \"5kg Dumbbell\",\n    \"description\": \"The basic dumbbel. Beginners should start with this\",\n    \"price\": 20\n}",
+							"raw": "{\n    \"id\" : \"702e378a-b144-4e78-858c-70cbfb754535\",\n    \"name\": \"5kg Dumbbell\",\n    \"description\": \"The basic dumbbel. Beginners should start with this\",\n    \"price\": 20\n}",
 							"options": {
 								"raw": {
 									"language": "json"
