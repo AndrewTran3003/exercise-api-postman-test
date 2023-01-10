@@ -15,7 +15,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7005/Equipments/0de7aeaf-7b94-4d55-acf3-9470d1961464",
+							"raw": "https://localhost:7005/Equipments/eb5ca909-9e84-4ec6-9f7c-ce922409bf94",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -23,7 +23,7 @@
 							"port": "7005",
 							"path": [
 								"Equipments",
-								"0de7aeaf-7b94-4d55-acf3-9470d1961464"
+								"eb5ca909-9e84-4ec6-9f7c-ce922409bf94"
 							]
 						}
 					},
@@ -55,7 +55,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\n        \"name\": \"1kg Dumbbell\",\n        \"description\": \"Beginner dumbbell\",\n        \"price\": 5\n    }",
+							"raw": "    {\n        \"name\": \"Hand Grip\",\n        \"description\": \"Used for exercises that involve pulling the weight stack\",\n        \"price\": 15\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -84,7 +84,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n    {\n        \"name\": \"20kg Dumbbell\",\n        \"description\": \"Intermediate dumbbell\",\n        \"price\": 20\n    },\n    {\n        \"name\": \"30kg Dumbbell\",\n        \"description\": \"Intermediate-Heavy dumbbell\",\n        \"price\": 25\n    },\n    {\n        \"name\": \"40kg Dumbbell\",\n        \"description\": \"Heavy dumbbell\",\n        \"price\": 30\n    }\n] \n   ",
+							"raw": "[\n    {\n        \"name\": \"Yoga Mat\",\n        \"description\": \"For doing streches\",\n        \"price\": 20\n    },\n    {\n        \"name\": \"Bosu Ball\",\n        \"description\": \"For Balance Training\",\n        \"price\": 25\n    },\n    {\n        \"name\": \"Chin up bar\",\n        \"description\": \"For chin up and pull up exercises\",\n        \"price\": 30\n    }\n] \n   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -113,7 +113,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\" : \"702e378a-b144-4e78-858c-70cbfb754535\",\n    \"name\": \"5kg Dumbbell\",\n    \"description\": \"The basic dumbbel. Beginners should start with this\",\n    \"price\": 20\n}",
+							"raw": "{\n    \"price\": 50,\n    \"id\": \"eb5ca909-9e84-4ec6-9f7c-ce922409bf94\",\n    \"name\": \"Hand Grip\",\n    \"description\": \"Actually use it with every equipment you want\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -130,6 +130,35 @@
 							"path": [
 								"Equipments",
 								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMultipleEquipments",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": \"b96b009f-bc9c-49a8-ab1a-43eb8976c40f\",\n        \"name\": \"Yoga Mat\",\n        \"description\": \"For doing streches and other exercises\",\n        \"price\": 20\n    },\n    {\n        \"id\": \"945a0441-87db-4828-8674-3666ae68a081\",\n        \"name\": \"Bosu Ball\",\n        \"description\": \"For Balance Training and other exercises\",\n        \"price\": 25\n    },\n    {\n        \"id\": \"d852e00c-32d8-49b7-b452-4e922611eddd\",\n        \"name\": \"Chin up bar\",\n        \"description\": \"For chin up and pull up exercises and other exercises\",\n        \"price\": 30\n    }\n] ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7005/Equipments/UpdateMany",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7005",
+							"path": [
+								"Equipments",
+								"UpdateMany"
 							]
 						}
 					},
